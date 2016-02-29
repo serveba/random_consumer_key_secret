@@ -8,6 +8,10 @@
   },
   "author": "Sergio Velasco",
   "license": "ISC",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/serveba/random_consumer_key_secret.git"
+  },
   "dependencies": {
     "randbytes": "0.0.1"
   }
