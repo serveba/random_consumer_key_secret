@@ -11,14 +11,14 @@ randomSource.getRandomBytes(32, function(buff) {
 
   // we concat the current timestamp in ms
   buff += ts;
-  console.log('buff: ' + buff);
+  // console.log('buff: ' + buff);
 
   // we create a sha512 hash and retrieve the hex string
   var hash = crypto.createHmac('sha256', buff).digest('hex');
 
   // we encode in b64 for key & secret generation
   var b64Hash = new Buffer(hash).toString('base64');
-  console.log('hash: ' + b64Hash);
+  // console.log('hash: ' + b64Hash);
 
   var key = b64Hash.substring(0, 32);
   console.log('consumer key: ' + key);
